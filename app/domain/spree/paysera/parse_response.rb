@@ -3,7 +3,7 @@
 class Spree::Paysera::ParseResponse
   attr_reader :payment_method, :data, :ss1, :ss2
 
-  PUBLIC_KEY = 'http://www.paysera.com/download/public.key'
+  PUBLIC_KEY = 'https://www.paysera.com/download/public.key'
 
   def self.for(payment_method, response)
     new(payment_method, response).run
